@@ -58,16 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EventDeserializer.cs" />
-    <Compile Include="CatchupSubscriptionObservable.cs" />
-    <Compile Include="CatchupSubscriptionObservableBase.cs" />
-    <Compile Include="CatchupSubscriptionStreamObservable.cs" />
+    <Compile Include="CatchUpSubscriptionObservable.cs" />
+    <Compile Include="CatchUpSubscriptionStreamObservable.cs" />
+    <Compile Include="EventStoreConnectionExtensions.cs" />
     <Compile Include="SubscriptionObservable.cs" />
-    <Compile Include="SubscriptionObservableBase.cs" />
     <Compile Include="SubscriptionStreamObservable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="EventStoreReactive.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

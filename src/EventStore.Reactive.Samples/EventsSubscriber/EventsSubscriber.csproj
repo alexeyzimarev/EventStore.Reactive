@@ -70,6 +70,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\EventStore.Reactive\EventStore.Reactive\EventStore.Reactive.csproj">
+      <Project>{c4727635-b34a-43dc-a55c-6f7c2add92b2}</Project>
+      <Name>EventStore.Reactive</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EventModels\EventModels.csproj">
       <Project>{CB5631B7-FF09-4D71-B9C1-108A31BCEC97}</Project>
       <Name>EventModels</Name>

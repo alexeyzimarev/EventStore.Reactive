@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsSubscriber", "EventsS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventModels", "EventModels\EventModels.csproj", "{CB5631B7-FF09-4D71-B9C1-108A31BCEC97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStore.Reactive", "..\EventStore.Reactive\EventStore.Reactive\EventStore.Reactive.csproj", "{C4727635-B34A-43DC-A55C-6F7C2ADD92B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CB5631B7-FF09-4D71-B9C1-108A31BCEC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB5631B7-FF09-4D71-B9C1-108A31BCEC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB5631B7-FF09-4D71-B9C1-108A31BCEC97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4727635-B34A-43DC-A55C-6F7C2ADD92B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4727635-B34A-43DC-A55C-6F7C2ADD92B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4727635-B34A-43DC-A55C-6F7C2ADD92B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4727635-B34A-43DC-A55C-6F7C2ADD92B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,7 @@ using System.Net;
 using EventModels;
 using EventStore.ClientAPI;
 using EventStore.ClientAPI.SystemData;
+using EventStore.Reactive;
 
 namespace EventsSubscriber
 {
@@ -16,13 +17,13 @@ namespace EventsSubscriber
 
             var subscriptions = new[]
             {
-                new EventStoreReactive.EventStoreObservable<TestEvent>(connection, false)
+                connection.CreateSubscriptionObservable<TestEvent>(false)
                     .Subscribe(x => DumpEvent(x, "EventStoreObservable")),
-                new EventStoreReactive.EventStoreCatchupObservable<TestEvent>(connection, null, false, DumpPosition)
-                    .Subscribe(x => DumpEvent(x, "EventStoreCatchupObservable")),
-                new EventStoreReactive.EventStoreStreamObservable<TestEvent>(connection, false, "test-stream-1")
+                connection.CreateStreamSubscriptionObservable<TestEvent>("test-stream-1", false)
                     .Subscribe(x => DumpEvent(x, "EventStoreStreamObservable for test-stream-1")),
-                new EventStoreReactive.EventStoreCatchupStreamObservable<TestEvent>(connection, null, false, "test-stream-2", DumpPosition)
+                connection.CreateCatchUpSubscriptionObservable<TestEvent>(null, false, DumpPosition)
+                    .Subscribe(x => DumpEvent(x, "EventStoreCatchupObservable")),
+                connection.CreateStreamCatchUpSubscriptionObservable<TestEvent>("test-stream-2", null, false, DumpPosition)
                     .Subscribe(x => DumpEvent(x, "EventStoreCatchupStreamObservable for test-stream-2"))
             };
 
