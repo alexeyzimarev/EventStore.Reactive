@@ -1,0 +1,13 @@
+{
+    "version": "1.0.0-*",
+    "dependencies": {
+        "Newtonsoft.Json": "9.0.1",
+        "EventStore.ClientAPI.NetCore": "0.0.1-alpha",
+        "System.Reactive.Core": "3.1.1"
+    },
+    "frameworks": {
+        "netstandard1.6": {
+            "NETStandard.Library": "1.6.0"
+        }
+    }
+}
