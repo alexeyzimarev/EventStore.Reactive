@@ -1,0 +1,19 @@
+FRAMEWORK: >= NET45
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    EventStore.Client (3.9.2)
+    FAKE (4.46.1)
+    Newtonsoft.Json (9.0.1)
+    System.Interactive (3.1.1)
+    System.Reactive (3.1.1)
+      System.Reactive.PlatformServices (>= 3.1.1)
+      System.Reactive.Windows.Threading (>= 3.1.1)
+    System.Reactive.Core (3.1.1)
+      System.Reactive.Interfaces (>= 3.1.1)
+    System.Reactive.Interfaces (3.1.1)
+    System.Reactive.Linq (3.1.1)
+      System.Reactive.Core (>= 3.1.1)
+    System.Reactive.PlatformServices (3.1.1)
+      System.Reactive.Linq (>= 3.1.1)
+    System.Reactive.Windows.Threading (3.1.1)
+      System.Reactive.Core (>= 3.1.1)

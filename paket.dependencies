@@ -1,0 +1,9 @@
+source https://api.nuget.org/v3/index.json
+framework >= net45
+
+nuget FAKE
+nuget EventStore.Client
+nuget System.Interactive
+nuget Newtonsoft.Json
+nuget System.Reactive.Core
+nuget System.Reactive

@@ -1,0 +1,4 @@
+EventStore.Client
+System.Interactive
+Newtonsoft.Json
+System.Reactive.Core

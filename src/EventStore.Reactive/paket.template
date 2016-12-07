@@ -1,0 +1,7 @@
+﻿type project
+authors
+	Alexey Zimarev
+owner alexey
+description
+	Reactive Extensions (Rx.Net) support for EventStore (geteventstore.com)
+tags reactive eventstore rx.net

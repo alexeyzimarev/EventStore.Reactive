@@ -1,15 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{7C03200A-F030-4EF5-A659-174D24D5051C}"
+	ProjectSection(SolutionItems) = preProject
+		..\paket.dependencies = ..\paket.dependencies
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsEmiter", "EventsEmiter\EventsEmiter.csproj", "{FE07C8CD-B386-40F8-9BF8-68E76FDA82AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsSubscriber", "EventsSubscriber\EventsSubscriber.csproj", "{D93FBD2B-E0E8-479B-A3E1-EC4EBE8D142C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventModels", "EventModels\EventModels.csproj", "{CB5631B7-FF09-4D71-B9C1-108A31BCEC97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStore.Reactive", "..\EventStore.Reactive\EventStore.Reactive\EventStore.Reactive.csproj", "{C4727635-B34A-43DC-A55C-6F7C2ADD92B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStore.Reactive", "EventStore.Reactive\EventStore.Reactive.csproj", "{C4727635-B34A-43DC-A55C-6F7C2ADD92B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

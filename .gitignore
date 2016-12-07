@@ -189,3 +189,4 @@ _Pvt_Extensions/
 ModelManifest.xml
 /src/EventStore.Reactive/packages
 /src/EventStore.Reactive.Samples/packages
+/.fake
